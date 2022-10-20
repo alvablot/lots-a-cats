@@ -1,0 +1,17 @@
+{
+  "name": "kunskapstest-5-petter-karlsson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash-es": "^4.17.21",
+    "snowpack": "^3.8.8"
+  }
+}

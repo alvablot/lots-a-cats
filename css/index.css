@@ -1,0 +1,81 @@
+:root {
+  font-size: 50%;
+  letter-spacing: 2px;
+}
+h1 {
+  font-size: 6rem;
+  cursor: pointer;
+}
+body {
+  color: white;
+  font-family: "Amatic SC", cursive;
+  font-size: 2.5rem;
+  min-height: 100vh;
+  background: black;
+}
+main {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+button {
+  font-family: "Amatic SC", cursive;
+  padding: 0.2em;
+  margin-bottom: 0.2rem;
+
+  color: white;
+  font-size: 3rem;
+  background: linear-gradient(180deg, #550101 0%, #ff0000 100%);
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  gap: 1em;
+}
+button[disabled] {
+  background: linear-gradient(180deg, #686868 0%, #414243 100%);
+  color: #a5a5a5;
+  cursor: no-drop;
+}
+.buttons > * {
+  flex: 1;
+}
+#page-no {
+  display: block;
+  margin-top: 1em;
+}
+#author {
+  text-align: right;
+  display: block;
+  margin-top: 0.5em;
+}
+#show {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem;
+  margin-top: 1rem;
+  color: rgb(255, 0, 0);
+}
+img {
+  width: 100%;
+  /* border-radius: 10px;*/
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: fill;
+  object-position: 50% 50%;
+  box-shadow: rgba(255, 255, 255, 0.3) 0px 0px 10px 0px;
+  z-index: 20;
+}
+.load-img {
+  width: 50%;
+  box-shadow: none;
+  position: relative;
+  left: 25%;
+}
+#preview {
+  position: absolute;
+  width: 30vw;
+  height: auto;
+  object-fit: fill;
+  border: 1px solid white;
+  display: none;
+}
